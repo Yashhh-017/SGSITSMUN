@@ -78,6 +78,10 @@ export default function Nav() {
             Our Story
             <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#7eb8f7] transition-all duration-300 group-hover:w-full rounded-full" />
           </a>
+          <a href="/what-is-mun" className="relative py-1 text-cream/80 hover:text-cream transition-colors duration-200 group">
+            What is MUN?
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#7eb8f7] transition-all duration-300 group-hover:w-full rounded-full" />
+          </a>
 
           {Object.entries(dropdowns).map(([label, items]) => (
             <div key={label} className="relative">
@@ -120,10 +124,12 @@ export default function Nav() {
           </a>
 
           <a
-            href="/#register"
+            href="https://forms.gle/7wArNn3jcDDJgD2j7"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-cream/50 px-5 py-2 rounded-full font-semibold hover:bg-cream hover:text-navy hover:shadow-[0_0_20px_rgba(248,240,229,0.35)] hover:scale-105 active:scale-95 transition-all duration-300"
           >
-            Apply Now
+            Register Now
           </a>
         </div>
       </div>
@@ -131,6 +137,7 @@ export default function Nav() {
       {mobileOpen && (
         <div className={`lg:hidden flex flex-col gap-3 px-6 pb-6 text-sm ${scrolled ? "bg-navy" : "bg-[#040e24]/80 backdrop-blur-sm"}`}>
           <a href="/our-story">Our Story</a>
+          <a href="/what-is-mun">What is MUN?</a>
           <a href="/#committees">Committees</a>
           <a href="/#secretariat">Secretariat</a>
           <a href="/fees">Fees & Packages</a>
@@ -138,8 +145,13 @@ export default function Nav() {
           <a href="/delegate-conduct">Delegate Conduct</a>
           <a href="/past-editions">Past Editions</a>
           <a href="/#contact">Commitment</a>
-          <a href="/#register" className="border border-cream/50 px-5 py-2 rounded-full text-center font-semibold">
-            Apply Now
+          <a
+            href="https://forms.gle/7wArNn3jcDDJgD2j7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-cream/50 px-5 py-2 rounded-full text-center font-semibold"
+          >
+            Register Now
           </a>
         </div>
       )}
