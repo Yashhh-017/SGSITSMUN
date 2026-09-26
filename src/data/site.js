@@ -123,9 +123,9 @@ export const executiveTeam = [
     image: "/assets/secretariat/venkatesh.jpg",
   },
   {
-    name: "RAJIV PARA",
+    name: "RAJEEV PARA",
     role: "USG - DELEGATE AFFAIRS",
-    image: "/assets/secretariat/rajiv.jpg",
+    image: "/assets/secretariat/rajeev.jpg",
   },
   {
     name: "SAHARSH SINGH",
