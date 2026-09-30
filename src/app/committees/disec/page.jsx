@@ -16,7 +16,7 @@ export default function DisecPage() {
       {/* =========================================================
           HERO
       ========================================================== */}
-      <section className="relative overflow-hidden px-6 pt-28 pb-16 sm:px-8 md:pt-36 md:pb-20 lg:px-12">
+      <section className="relative overflow-hidden px-6 pb-16 pt-28 sm:px-8 md:pb-20 md:pt-36 lg:px-12">
         {/* Soft background glow */}
         <div
           className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[800px] -translate-x-1/2 rounded-full bg-[#082052]/35 blur-3xl"
@@ -54,7 +54,7 @@ export default function DisecPage() {
           </h1>
 
           <p className="mt-5 max-w-2xl font-display text-lg italic leading-relaxed text-[#7eb8f7]/85 sm:text-xl md:text-2xl">
-            Disarmament & International Security Committee
+            Disarmament &amp; International Security Committee
           </p>
 
           {/* Description */}
@@ -84,7 +84,7 @@ export default function DisecPage() {
           </p>
 
           <h2 className="font-display text-3xl font-bold tracking-tight text-cream sm:text-4xl md:text-5xl">
-            What we'll be debating
+            What we&apos;ll be debating
           </h2>
 
           <div className="mx-auto mt-4 h-[2px] w-10 rounded-full bg-[#7eb8f7]/70" />
@@ -115,7 +115,6 @@ export default function DisecPage() {
       <section className="px-6 py-14 sm:px-8 md:py-16 lg:px-12">
         <div className="mx-auto max-w-4xl">
           <div className="grid gap-10 md:grid-cols-[1fr_auto_1fr] md:items-center">
-
             {/* Left */}
             <div className="text-center md:text-left">
               <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/35 sm:text-xs">
@@ -123,7 +122,7 @@ export default function DisecPage() {
               </p>
 
               <h3 className="font-display text-2xl font-bold text-cream sm:text-3xl">
-                Disarmament & International Security
+                Disarmament &amp; International Security
               </h3>
 
               <p className="mt-4 font-sans text-sm font-light leading-relaxed text-cream/50">
@@ -175,7 +174,6 @@ export default function DisecPage() {
       ========================================================== */}
       <section className="border-t border-cream/10 px-6 py-10 sm:px-8 md:py-12 lg:px-12">
         <div className="mx-auto flex max-w-4xl items-center justify-between">
-
           {/* Previous */}
           <Link
             href="/committees/unhrc"
