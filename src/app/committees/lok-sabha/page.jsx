@@ -117,27 +117,6 @@ export default function LokSabhaPage() {
                 </p>
               </div>
             </div>
-
-            {/* Agenda 02 */}
-            <div className="grid gap-4 py-7 sm:grid-cols-[80px_1fr] sm:gap-8">
-              <div>
-                <span className="font-mono text-xs font-semibold tracking-[0.2em] text-[#7eb8f7]/80">
-                  02
-                </span>
-              </div>
-
-              <div>
-                <p className="font-display text-lg font-semibold leading-snug text-cream sm:text-xl">
-                  Strengthening India’s Economic Resilience
-                </p>
-
-                <p className="mt-2 max-w-2xl font-sans text-sm font-light leading-relaxed text-cream/50">
-                  Examining geopolitical and energy shocks, crude-oil
-                  volatility, E20, inflation, taxation, trade and energy
-                  security.
-                </p>
-              </div>
-            </div>
           </div>
 
           {/* Download */}
