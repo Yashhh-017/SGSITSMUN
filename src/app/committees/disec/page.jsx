@@ -75,39 +75,67 @@ export default function DisecPage() {
       </section>
 
       {/* =========================================================
-          AGENDA
-      ========================================================== */}
-      <section className="border-y border-cream/10 bg-[#081a3e]/30 px-6 py-14 sm:px-8 md:py-16 lg:px-12">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/40 sm:text-xs">
-            Agenda
-          </p>
+    AGENDA
+========================================================= */}
+<section className="border-y border-cream/10 bg-[#081a3e]/30 px-6 py-14 sm:px-8 md:py-16 lg:px-12">
+  <div className="mx-auto max-w-4xl">
+    {/* Header */}
+    <div className="text-center">
+      <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/40 sm:text-xs">
+        Agenda
+      </p>
 
-          <h2 className="font-display text-3xl font-bold tracking-tight text-cream sm:text-4xl md:text-5xl">
-            What we&apos;ll be debating
-          </h2>
+      <h2 className="font-display text-3xl font-bold tracking-tight text-cream sm:text-4xl md:text-5xl">
+        What we&apos;ll be debating
+      </h2>
 
-          <div className="mx-auto mt-4 h-[2px] w-10 rounded-full bg-[#7eb8f7]/70" />
+      <div className="mx-auto mt-4 h-[2px] w-10 rounded-full bg-[#7eb8f7]/70" />
 
-          <p className="mx-auto mt-6 max-w-xl font-sans text-sm font-light leading-relaxed text-cream/50 sm:text-base">
-            Agenda to be announced.
-          </p>
+      <p className="mx-auto mt-5 max-w-2xl font-sans text-sm font-light leading-relaxed text-cream/50 sm:text-base">
+        Where nuclear security meets the realities of conflict and escalation.
+      </p>
+    </div>
 
-          {/* CTA */}
-          <a
-            href="/assets/agendas/disec-agenda.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group mt-7 inline-flex items-center gap-4 border border-cream/15 bg-[#040e24]/60 px-6 py-3.5 text-sm font-semibold text-cream transition-all duration-300 hover:border-[#7eb8f7]/50 hover:bg-[#040e24]"
-          >
-            <span>Download Committee Agenda</span>
-
-            <span className="text-[#7eb8f7]/70 transition-all duration-300 group-hover:translate-y-0.5 group-hover:text-[#7eb8f7]">
-              ↓
-            </span>
-          </a>
+    {/* Agenda Item */}
+    <div className="mt-10 border-y border-cream/10">
+      <div className="grid gap-4 py-7 sm:grid-cols-[80px_1fr] sm:gap-8">
+        <div>
+          <span className="font-mono text-xs font-semibold tracking-[0.2em] text-[#7eb8f7]/80">
+            01
+          </span>
         </div>
-      </section>
+
+        <div>
+          <p className="font-display text-lg font-semibold leading-snug text-cream sm:text-xl">
+            Addressing Nuclear Proliferation Risks in Conflict Zones
+          </p>
+
+          <p className="mt-2 max-w-2xl font-sans text-sm font-light leading-relaxed text-cream/50">
+            With special emphasis on the Iran crisis, nuclear
+            non-proliferation, international safeguards, protection of
+            nuclear facilities, and preventing further escalation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Download */}
+    <div className="mt-8 text-center">
+      <a
+        href="/assets/agendas/disec-agenda.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group inline-flex items-center gap-4 border border-cream/15 bg-[#040e24]/50 px-6 py-3.5 text-sm font-semibold text-cream transition-all duration-300 hover:border-[#7eb8f7]/50 hover:bg-[#040e24]"
+      >
+        <span>Download Full Agenda</span>
+
+        <span className="text-[#7eb8f7]/70 transition-all duration-300 group-hover:translate-y-0.5 group-hover:text-[#7eb8f7]">
+          ↓
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* =========================================================
           COMMITTEE INFORMATION
