@@ -7,17 +7,14 @@ const ebMembers = [
   {
     role: "Chairperson",
     name: "Paridhi Arora",
-    photo: "/eb/paridhi.jpeg",
   },
   {
     role: "Vice-Chairperson",
     name: "Shrajal Pal",
-    photo: "/eb/shrajal.jpeg",
   },
   {
     role: "Rapporteur",
     name: "Sonam Gurjar",
-    photo: "/eb/mahabharata-rapporteur.jpg",
   },
 ];
 export const metadata = {
@@ -215,27 +212,6 @@ export default function MahabharataPage() {
           <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-6">
             {ebMembers.map((m) => (
               <div key={m.role} className="group text-center">
-                <div className="relative mx-auto aspect-[4/5] w-full max-w-[260px] overflow-hidden rounded-2xl border border-cream/15 bg-[#081a3e]/70 transition-all duration-500 group-hover:-translate-y-1 group-hover:border-[#7eb8f7]/50">
-                  {m.photo ? (
-                    <Image
-                      src={m.photo}
-                      alt={`${m.name}, ${m.role}`}
-                      fill
-                      sizes="(max-width: 640px) 70vw, 260px"
-                      className="object-cover"
-                    />
-                  ) : (
-                    <div className="flex h-full w-full items-center justify-center font-display text-5xl font-bold text-cream/20">
-                      {m.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")
-                        .slice(0, 2)}
-                    </div>
-                  )}
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#040e24]/60 via-transparent to-transparent" />
-                </div>
 
                 <p className="mt-5 font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-[#7eb8f7]/80">
                   {m.role}
