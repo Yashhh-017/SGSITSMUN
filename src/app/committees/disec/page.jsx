@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -7,6 +8,29 @@ export const metadata = {
   description:
     "The arena of international security, where nations confront questions of disarmament, military technology, weapons proliferation and the delicate pursuit of peace.",
 };
+
+const ebMembers = [
+  {
+    role: "Chairperson",
+    name: "Prashansa Soni",
+    photo: "/eb/prashansa.jpeg",
+  },
+  {
+    role: "Co-Chairperson",
+    name: "Keshav Tugnawat",
+    photo: "/eb/Keshav.jpeg",
+  },
+  {
+    role: "Vice-Chairperson",
+    name: "Aadhya Mishra",
+    photo: "/eb/aadhya.jpeg",
+  },
+  {
+    role: "Rapporteur",
+    name: "Harsh Joshi",
+    photo: "/eb/disec-rapporteur.jpeg",
+  },
+];
 
 export default function DisecPage() {
   return (
@@ -75,67 +99,163 @@ export default function DisecPage() {
       </section>
 
       {/* =========================================================
-    AGENDA
-========================================================= */}
-<section className="border-y border-cream/10 bg-[#081a3e]/30 px-6 py-14 sm:px-8 md:py-16 lg:px-12">
-  <div className="mx-auto max-w-4xl">
-    {/* Header */}
-    <div className="text-center">
-      <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/40 sm:text-xs">
-        Agenda
-      </p>
+          AGENDA
+      ========================================================== */}
+      <section className="border-y border-cream/10 bg-[#081a3e]/30 px-6 py-14 sm:px-8 md:py-16 lg:px-12">
+        <div className="mx-auto max-w-4xl">
+          {/* Header */}
+          <div className="text-center">
+            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/40 sm:text-xs">
+              Agenda
+            </p>
 
-      <h2 className="font-display text-3xl font-bold tracking-tight text-cream sm:text-4xl md:text-5xl">
-        What we&apos;ll be debating
-      </h2>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-cream sm:text-4xl md:text-5xl">
+              What we&apos;ll be debating
+            </h2>
 
-      <div className="mx-auto mt-4 h-[2px] w-10 rounded-full bg-[#7eb8f7]/70" />
+            <div className="mx-auto mt-4 h-[2px] w-10 rounded-full bg-[#7eb8f7]/70" />
 
-      <p className="mx-auto mt-5 max-w-2xl font-sans text-sm font-light leading-relaxed text-cream/50 sm:text-base">
-        Where nuclear security meets the realities of conflict and escalation.
-      </p>
-    </div>
+            <p className="mx-auto mt-5 max-w-2xl font-sans text-sm font-light leading-relaxed text-cream/50 sm:text-base">
+              Where nuclear security meets the realities of conflict and escalation.
+            </p>
+          </div>
 
-    {/* Agenda Item */}
-    <div className="mt-10 border-y border-cream/10">
-      <div className="grid gap-4 py-7 sm:grid-cols-[80px_1fr] sm:gap-8">
-        <div>
-          <span className="font-mono text-xs font-semibold tracking-[0.2em] text-[#7eb8f7]/80">
-            01
-          </span>
+          {/* Agenda Item */}
+          <div className="mt-10 border-y border-cream/10">
+            <div className="grid gap-4 py-7 sm:grid-cols-[80px_1fr] sm:gap-8">
+              <div>
+                <span className="font-mono text-xs font-semibold tracking-[0.2em] text-[#7eb8f7]/80">
+                  01
+                </span>
+              </div>
+
+              <div>
+                <p className="font-display text-lg font-semibold leading-snug text-cream sm:text-xl">
+                  Addressing Nuclear Proliferation Risks in Conflict Zones
+                </p>
+
+                <p className="mt-2 max-w-2xl font-sans text-sm font-light leading-relaxed text-cream/50">
+                  With special emphasis on the Iran crisis, nuclear
+                  non-proliferation, international safeguards, protection of
+                  nuclear facilities, and preventing further escalation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Download */}
+          <div className="mt-8 text-center">
+            <a
+              href="/assets/agendas/disec-agenda.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-4 border border-cream/15 bg-[#040e24]/50 px-6 py-3.5 text-sm font-semibold text-cream transition-all duration-300 hover:border-[#7eb8f7]/50 hover:bg-[#040e24]"
+            >
+              <span>Download Full Agenda</span>
+
+              <span className="text-[#7eb8f7]/70 transition-all duration-300 group-hover:translate-y-0.5 group-hover:text-[#7eb8f7]">
+                ↓
+              </span>
+            </a>
+          </div>
         </div>
+      </section>
 
-        <div>
-          <p className="font-display text-lg font-semibold leading-snug text-cream sm:text-xl">
-            Addressing Nuclear Proliferation Risks in Conflict Zones
+      {/* =========================================================
+          RESOURCES
+      ========================================================== */}
+      <section className="border-t border-cream/10 px-6 py-12 sm:px-8 md:py-14 lg:px-12">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/35 sm:text-xs">
+            Resources
           </p>
 
-          <p className="mt-2 max-w-2xl font-sans text-sm font-light leading-relaxed text-cream/50">
-            With special emphasis on the Iran crisis, nuclear
-            non-proliferation, international safeguards, protection of
-            nuclear facilities, and preventing further escalation.
-          </p>
+          <h2 className="mb-8 font-display text-2xl font-bold text-cream sm:text-3xl">
+            Study materials
+          </h2>
+
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href="/resources/disec-study-guide.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-4 border border-cream/15 bg-[#040e24]/50 px-6 py-3.5 text-sm font-semibold text-cream transition-all duration-300 hover:border-[#7eb8f7]/50 hover:bg-[#040e24]"
+            >
+              <span>Study Guide</span>
+              <span className="text-[#7eb8f7]/70 transition-all duration-300 group-hover:translate-y-0.5 group-hover:text-[#7eb8f7]">
+                ↓
+              </span>
+            </a>
+
+            <a
+              href="/resources/disec-rop.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-4 border border-cream/15 bg-[#040e24]/50 px-6 py-3.5 text-sm font-semibold text-cream transition-all duration-300 hover:border-[#7eb8f7]/50 hover:bg-[#040e24]"
+            >
+              <span>Rules of Procedure</span>
+              <span className="text-[#7eb8f7]/70 transition-all duration-300 group-hover:translate-y-0.5 group-hover:text-[#7eb8f7]">
+                ↓
+              </span>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    {/* Download */}
-    <div className="mt-8 text-center">
-      <a
-        href="/assets/agendas/disec-agenda.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group inline-flex items-center gap-4 border border-cream/15 bg-[#040e24]/50 px-6 py-3.5 text-sm font-semibold text-cream transition-all duration-300 hover:border-[#7eb8f7]/50 hover:bg-[#040e24]"
-      >
-        <span>Download Full Agenda</span>
+      {/* =========================================================
+          MEET YOUR EB
+      ========================================================== */}
+      <section className="border-t border-cream/10 bg-[#081a3e]/30 px-6 py-14 sm:px-8 md:py-16 lg:px-12">
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center">
+            <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/40 sm:text-xs">
+              Executive Board
+            </p>
 
-        <span className="text-[#7eb8f7]/70 transition-all duration-300 group-hover:translate-y-0.5 group-hover:text-[#7eb8f7]">
-          ↓
-        </span>
-      </a>
-    </div>
-  </div>
-</section>
+            <h2 className="font-display text-3xl font-bold tracking-tight text-cream sm:text-4xl md:text-5xl">
+              Meet your EB
+            </h2>
+
+            <div className="mx-auto mt-4 h-[2px] w-10 rounded-full bg-[#7eb8f7]/70" />
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-6">
+            {ebMembers.map((m) => (
+              <div key={m.role} className="group text-center">
+                <div className="relative mx-auto aspect-[4/5] w-full max-w-[260px] overflow-hidden rounded-2xl border border-cream/15 bg-[#081a3e]/70 transition-all duration-500 group-hover:-translate-y-1 group-hover:border-[#7eb8f7]/50">
+                  {m.photo ? (
+                    <Image
+                      src={m.photo}
+                      alt={`${m.name}, ${m.role}`}
+                      fill
+                      sizes="(max-width: 640px) 70vw, 260px"
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center font-display text-5xl font-bold text-cream/20">
+                      {m.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")
+                        .slice(0, 2)}
+                    </div>
+                  )}
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#040e24]/60 via-transparent to-transparent" />
+                </div>
+
+                <p className="mt-5 font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-[#7eb8f7]/80">
+                  {m.role}
+                </p>
+
+                <h3 className="mt-1.5 font-display text-lg font-bold text-cream sm:text-xl">
+                  {m.name}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* =========================================================
           COMMITTEE INFORMATION
@@ -178,22 +298,6 @@ export default function DisecPage() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* =========================================================
-          RESOURCES
-      ========================================================== */}
-      <section className="border-t border-cream/10 px-6 py-12 sm:px-8 md:py-14 lg:px-12">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.25em] text-cream/35 sm:text-xs">
-            Resources
-          </p>
-
-          <p className="font-sans text-sm font-light text-cream/40">
-            Background guides and additional committee documents will be
-            available here closer to the conference.
-          </p>
         </div>
       </section>
 
