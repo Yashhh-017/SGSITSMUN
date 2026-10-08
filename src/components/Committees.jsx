@@ -106,7 +106,7 @@ export default function Committees() {
             DELEGATE DESK
           </p>
           <h2 className="delegate-heading font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-cream mb-5 leading-tight">
-            FIVE ARENAS.
+            FOUR ARENAS.
             <span className="block text-cream/90">ONE SHARED PURPOSE.</span>
           </h2>
           <p className="delegate-desc font-sans text-base sm:text-lg text-cream/70 font-light leading-relaxed">
