@@ -221,7 +221,7 @@ export default function DisecPage() {
 
           {/* Next */}
           <Link
-            href="/committees/unodc"
+            href="/committees/lok-sabha"
             className="group text-right"
           >
             <span className="block text-[10px] font-semibold uppercase tracking-[0.2em] text-cream/30 transition-colors duration-300 group-hover:text-[#7eb8f7] sm:text-xs">
@@ -229,7 +229,7 @@ export default function DisecPage() {
             </span>
 
             <span className="mt-1 block font-display text-base font-bold text-cream/70 transition-colors duration-300 group-hover:text-cream sm:text-lg">
-              UNODC
+              LOK SABHA
             </span>
           </Link>
         </div>

@@ -85,16 +85,6 @@ export const committees = [
     agenda: "Agenda to be announced.",
     resources: [],
   },
-  {
-    num: "05",
-    slug: "unodc",
-    name: "UNODC",
-    tag: "United Nations Office on Drugs & Crime",
-    desc: "A forum confronting the challenges that cross borders—from organized crime and illicit trafficking to corruption and international criminal justice.",
-    question: "How does the world fight problems that know no borders?",
-    agenda: "Agenda to be announced.",
-    resources: [],
-  },
 ];
 
 export const conferenceLeadership = [

@@ -12,7 +12,6 @@ const committeeSlugs = {
   "MAHABHARATA": "mahabharata",
   "UNHRC": "unhrc",
   "DISEC": "disec",
-  "UNODC": "unodc",
 };
 
 export default function Committees() {
@@ -118,7 +117,7 @@ export default function Committees() {
 
         <div
           ref={cardsContainerRef}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-5 xl:gap-6 items-stretch"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-5 xl:gap-6 items-stretch"
         >
           {committees.map((c) => (
             <Link
