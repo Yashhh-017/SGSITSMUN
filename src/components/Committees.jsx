@@ -12,7 +12,6 @@ const committeeSlugs = {
   "MAHABHARATA": "mahabharata",
   "UNHRC": "unhrc",
   "DISEC": "disec",
-  "UNODC": "unodc",
 };
 
 export default function Committees() {
@@ -107,7 +106,7 @@ export default function Committees() {
             DELEGATE DESK
           </p>
           <h2 className="delegate-heading font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-cream mb-5 leading-tight">
-            FIVE ARENAS.
+            FOUR ARENAS.
             <span className="block text-cream/90">ONE SHARED PURPOSE.</span>
           </h2>
           <p className="delegate-desc font-sans text-base sm:text-lg text-cream/70 font-light leading-relaxed">
@@ -118,7 +117,7 @@ export default function Committees() {
 
         <div
           ref={cardsContainerRef}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-5 xl:gap-6 items-stretch"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-5 xl:gap-6 items-stretch"
         >
           {committees.map((c) => (
             <Link

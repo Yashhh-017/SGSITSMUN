@@ -85,16 +85,6 @@ export const committees = [
     agenda: "Agenda to be announced.",
     resources: [],
   },
-  {
-    num: "05",
-    slug: "unodc",
-    name: "UNODC",
-    tag: "United Nations Office on Drugs & Crime",
-    desc: "A forum confronting the challenges that cross borders—from organized crime and illicit trafficking to corruption and international criminal justice.",
-    question: "How does the world fight problems that know no borders?",
-    agenda: "Agenda to be announced.",
-    resources: [],
-  },
 ];
 
 export const conferenceLeadership = [
@@ -184,7 +174,7 @@ export const conductPoints = [
 ];
 
 export const waysIn = [
-  { title: "Register as Delegate", desc: "Three committees, two days. Come ready to argue, negotiate and draft.", status: "Registration open", href: "https://forms.gle/nPdiZcwdVf5XmbXJ6" },
+  { title: "Register as Delegate", desc: "Four committees, two days. Come ready to argue, negotiate and draft.", status: "Registration open", href: "https://forms.gle/nPdiZcwdVf5XmbXJ6" },
   { title: "Join the Executive Board", desc: "Chair a committee, shape the agenda and hold the room to account.", status: "Applications open", href: "#" },
   { title: "Volunteer with the Team", desc: "Behind every good conference is a team that makes it invisible.", status: "Applications open", href: "#contact" },
   { title: "Partner or Sponsor", desc: "Brands, institutions and organisations — one conversation covers all of it.", status: "Enquire now", href: "#contact" },
